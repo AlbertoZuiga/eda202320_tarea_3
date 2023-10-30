@@ -1,0 +1,3 @@
+/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles/calculadora.dir
+/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles/edit_cache.dir
+/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles/rebuild_cache.dir

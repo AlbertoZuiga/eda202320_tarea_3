@@ -1,0 +1,1 @@
+/usr/bin/g++ CMakeFiles/calculadora.dir/tests/tarea_4.cpp.o CMakeFiles/calculadora.dir/src/treeNode.cpp.o CMakeFiles/calculadora.dir/src/treeListNode.cpp.o CMakeFiles/calculadora.dir/src/treeList.cpp.o CMakeFiles/calculadora.dir/src/tree.cpp.o CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o -o calculadora 
