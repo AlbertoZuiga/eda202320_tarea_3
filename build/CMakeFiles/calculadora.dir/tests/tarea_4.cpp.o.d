@@ -153,4 +153,6 @@ CMakeFiles/calculadora.dir/tests/tarea_4.cpp.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/edauandes/Desktop/tareas/tarea_3/include/infix/infixToPostfix.hpp
+ /home/edauandes/Desktop/tareas/tarea_3/include/infix/infixToPostfix.hpp \
+ /home/edauandes/Desktop/tareas/tarea_3/include/trees/tree.hpp \
+ /home/edauandes/Desktop/tareas/tarea_3/include/trees/treeNode.hpp

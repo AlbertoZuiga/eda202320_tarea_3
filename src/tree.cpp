@@ -1,5 +1,9 @@
 #include "trees/tree.hpp"
+#include "infix/infixToPostfix.hpp"
 #include <iostream>
+#include <string>
+#include <stack>
+#include <sstream>
 
 namespace trees {
 
@@ -7,18 +11,52 @@ Tree::Tree(): root(nullptr) {
 
 }
 
+TreeNode* Tree::buildTreeFromPostfix(const std::string& postfix) {
+	std::stack<TreeNode*> nodeStack;
+	std::stringstream ss(postfix);
+	std::string token;
+
+	while (ss >> token) {
+		if (esAlfanumerica(token)) { // Si es un operando, crea un nodo y apílalo
+			TreeNode* operandNode = new TreeNode(token);
+			nodeStack.push(operandNode);
+		} else if (isOperator(token)) { // Si es un operador, crea un nodo y construye el árbol
+			TreeNode* operatorNode = new TreeNode(token);
+			TreeNode* rightOperand = nodeStack.top();
+			nodeStack.pop();
+			TreeNode* leftOperand = nodeStack.top();
+			nodeStack.pop();
+			operatorNode->setLeft(leftOperand);
+			operatorNode->setRight(rightOperand);
+			nodeStack.push(operatorNode);
+		}
+	}
+
+	setRoot(nodeStack.top());
+	return nodeStack.top(); // El nodo superior de la pila es la raíz del árbol
+}
+
 void Tree::setRoot(TreeNode* node){
 	if (root == nullptr){
 		root = node;
 	}
 }
+
 void Tree::insert(TreeNode* child, TreeNode* parent){
 	if (parent != nullptr){
-		parent->getChildren()->insertFirst(child);
+		if (parent->getLeft()==nullptr){
+			parent->setLeft(child);
+		}
+		else if (parent->getRight()==nullptr){
+			parent->setRight(child);
+		}
+		else {
+			std::cout << "El nodo padre ya tiene sus hijos ocupados" << std::endl;
+		}
 	}
 }
 
-void Tree::insert(int val, int val_parent){
+void Tree::insert(std::string val, std::string val_parent){
 	TreeNode* parent = find(val_parent);
 	if (parent != nullptr){
 		TreeNode* child = new TreeNode(val);
@@ -27,40 +65,33 @@ void Tree::insert(int val, int val_parent){
 	}
 }
 
-TreeNode* Tree::find_rec(int val, TreeNode* node){
+TreeNode* Tree::find_rec(std::string val, TreeNode* node){
 	TreeNode* ans = nullptr;
 	if (node != nullptr){
 		if (node->getData() == val){
 			ans = node;
 		}
-		else{ // search in children
-			TreeList* childrenList = node->getChildren();
-			TreeListNode* ptr = childrenList->getHead();
-			while (ptr!=nullptr && ans == nullptr){
-				ans = find_rec(val, ptr->getData());
-				ptr = ptr->getNext();
+		else{ 
+			ans = find_rec(val, node->getLeft());
+			if (ans==nullptr){
+				ans = find_rec(val, node->getRight());
 			}
 		}
 	}
 	return ans;
 }
 
-TreeNode* Tree::find(int val){
+TreeNode* Tree::find(std::string val){
 	TreeNode* ans = find_rec(val, root);
 	return ans;
 }
 
-
 void Tree::traverse_rec(TreeNode* node, int level){
 	if (node != nullptr){
-		std::cout << std::string(level*2, '-');
-		std::cout<<node->getData() << " at level " << level <<std::endl;
-		TreeList* childrenList = node->getChildren();
-		TreeListNode* ptr = childrenList->getHead();
-		while (ptr!=nullptr){
-			traverse_rec(ptr->getData(), level + 1);
-			ptr = ptr->getNext();
-		}
+		std::cout << std::string(level*3, '-');
+		std::cout << "("<< node->getData() << ")" << std::endl;
+		traverse_rec(node->getLeft(),level + 1);
+		traverse_rec(node->getRight(),level + 1);
 	}
 }
 

@@ -3,17 +3,17 @@
 
 namespace trees {
 
-TreeNode::TreeNode(): parent(nullptr), data(""), left_children(new TreeNode), right_children(new TreeNode) {
+TreeNode::TreeNode(): parent(nullptr), data(""), left_children(nullptr), right_children(nullptr) {
 }
 
-TreeNode::TreeNode(std::string val): parent(nullptr), data(val), left_children(new TreeNode), right_children(new TreeNode) {
+TreeNode::TreeNode(std::string val): parent(nullptr), data(val), left_children(nullptr), right_children(nullptr) {
 }
 
 void TreeNode::setParent(TreeNode* node){
 	parent = node;
 }
 void TreeNode::setData(std::string val){
-		data = val;
+	data = val;
 }
 void TreeNode::setLeft(TreeNode* left){
 	left_children = left;
@@ -35,8 +35,6 @@ TreeNode* TreeNode::getRight(){
 }
 
 TreeNode::~TreeNode() {
-	//action when a treeNode is deleted
-	//delete the descendants only
 	if (left_children != nullptr){
 		delete left_children;
 	}

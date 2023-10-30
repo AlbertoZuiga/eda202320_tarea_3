@@ -177,54 +177,6 @@ src/tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/tree.cpp.s
 .PHONY : src/tree.cpp.s
 
-src/treeList.o: src/treeList.cpp.o
-.PHONY : src/treeList.o
-
-# target to build an object file
-src/treeList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/treeList.cpp.o
-.PHONY : src/treeList.cpp.o
-
-src/treeList.i: src/treeList.cpp.i
-.PHONY : src/treeList.i
-
-# target to preprocess a source file
-src/treeList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/treeList.cpp.i
-.PHONY : src/treeList.cpp.i
-
-src/treeList.s: src/treeList.cpp.s
-.PHONY : src/treeList.s
-
-# target to generate assembly for a file
-src/treeList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/treeList.cpp.s
-.PHONY : src/treeList.cpp.s
-
-src/treeListNode.o: src/treeListNode.cpp.o
-.PHONY : src/treeListNode.o
-
-# target to build an object file
-src/treeListNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/treeListNode.cpp.o
-.PHONY : src/treeListNode.cpp.o
-
-src/treeListNode.i: src/treeListNode.cpp.i
-.PHONY : src/treeListNode.i
-
-# target to preprocess a source file
-src/treeListNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/treeListNode.cpp.i
-.PHONY : src/treeListNode.cpp.i
-
-src/treeListNode.s: src/treeListNode.cpp.s
-.PHONY : src/treeListNode.s
-
-# target to generate assembly for a file
-src/treeListNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calculadora.dir/build.make CMakeFiles/calculadora.dir/src/treeListNode.cpp.s
-.PHONY : src/treeListNode.cpp.s
-
 src/treeNode.o: src/treeNode.cpp.o
 .PHONY : src/treeNode.o
 
@@ -288,12 +240,6 @@ help:
 	@echo "... src/tree.o"
 	@echo "... src/tree.i"
 	@echo "... src/tree.s"
-	@echo "... src/treeList.o"
-	@echo "... src/treeList.i"
-	@echo "... src/treeList.s"
-	@echo "... src/treeListNode.o"
-	@echo "... src/treeListNode.i"
-	@echo "... src/treeListNode.s"
 	@echo "... src/treeNode.o"
 	@echo "... src/treeNode.i"
 	@echo "... src/treeNode.s"

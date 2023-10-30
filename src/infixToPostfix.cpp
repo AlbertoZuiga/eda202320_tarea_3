@@ -7,8 +7,8 @@
 
 std::map<std::string, double> variables;
 double ans = 0.0;
+std::string last_operation = "";
 
-// Función para verificar si un carácter es un operador
 bool isOperator(const std::string &c) {
     return (c == "+" || c == "-" || c == "*" || c == "/" || c == "^");
 }
@@ -22,7 +22,6 @@ bool esAlfanumerica(const std::string &cadena) {
     return true;  // Si no se encontraron caracteres no alfanuméricos, la cadena es alfanumérica.
 }
 
-// Función para obtener la precedencia de un operador
 int getPrecedence(const std::string &c) {
     if (c == "^")
         return 3;
@@ -34,7 +33,6 @@ int getPrecedence(const std::string &c) {
         return 0;
 }
 
-// Función para convertir una expresión infija en una expresión posfija
 std::string infixToPostfix(const std::string& infix) {
     std::string postfix = "";
     std::stack<std::string> operatorStack;
@@ -141,6 +139,7 @@ void saveVariable(const std::string infixExpression){
 
 void calculate(const std::string expression){
     std::string postfixExpression = infixToPostfix(expression);
+    last_operation = postfixExpression;
     ans = calculatePostfix(postfixExpression);
     std::cout << "ans: " << ans << std::endl;
 }

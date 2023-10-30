@@ -6,6 +6,7 @@
 
 extern std::map<std::string, double> variables;
 extern double ans;
+extern std::string last_operation;
 
 bool isOperator(const std::string &c);
 bool esAlfanumerica(const std::string &cadena);

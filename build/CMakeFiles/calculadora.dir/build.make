@@ -97,38 +97,10 @@ CMakeFiles/calculadora.dir/src/treeNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadora.dir/src/treeNode.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edauandes/Desktop/tareas/tarea_3/src/treeNode.cpp -o CMakeFiles/calculadora.dir/src/treeNode.cpp.s
 
-CMakeFiles/calculadora.dir/src/treeListNode.cpp.o: CMakeFiles/calculadora.dir/flags.make
-CMakeFiles/calculadora.dir/src/treeListNode.cpp.o: ../src/treeListNode.cpp
-CMakeFiles/calculadora.dir/src/treeListNode.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/calculadora.dir/src/treeListNode.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/treeListNode.cpp.o -MF CMakeFiles/calculadora.dir/src/treeListNode.cpp.o.d -o CMakeFiles/calculadora.dir/src/treeListNode.cpp.o -c /home/edauandes/Desktop/tareas/tarea_3/src/treeListNode.cpp
-
-CMakeFiles/calculadora.dir/src/treeListNode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadora.dir/src/treeListNode.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edauandes/Desktop/tareas/tarea_3/src/treeListNode.cpp > CMakeFiles/calculadora.dir/src/treeListNode.cpp.i
-
-CMakeFiles/calculadora.dir/src/treeListNode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadora.dir/src/treeListNode.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edauandes/Desktop/tareas/tarea_3/src/treeListNode.cpp -o CMakeFiles/calculadora.dir/src/treeListNode.cpp.s
-
-CMakeFiles/calculadora.dir/src/treeList.cpp.o: CMakeFiles/calculadora.dir/flags.make
-CMakeFiles/calculadora.dir/src/treeList.cpp.o: ../src/treeList.cpp
-CMakeFiles/calculadora.dir/src/treeList.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/calculadora.dir/src/treeList.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/treeList.cpp.o -MF CMakeFiles/calculadora.dir/src/treeList.cpp.o.d -o CMakeFiles/calculadora.dir/src/treeList.cpp.o -c /home/edauandes/Desktop/tareas/tarea_3/src/treeList.cpp
-
-CMakeFiles/calculadora.dir/src/treeList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/calculadora.dir/src/treeList.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edauandes/Desktop/tareas/tarea_3/src/treeList.cpp > CMakeFiles/calculadora.dir/src/treeList.cpp.i
-
-CMakeFiles/calculadora.dir/src/treeList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/calculadora.dir/src/treeList.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edauandes/Desktop/tareas/tarea_3/src/treeList.cpp -o CMakeFiles/calculadora.dir/src/treeList.cpp.s
-
 CMakeFiles/calculadora.dir/src/tree.cpp.o: CMakeFiles/calculadora.dir/flags.make
 CMakeFiles/calculadora.dir/src/tree.cpp.o: ../src/tree.cpp
 CMakeFiles/calculadora.dir/src/tree.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/calculadora.dir/src/tree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/calculadora.dir/src/tree.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/tree.cpp.o -MF CMakeFiles/calculadora.dir/src/tree.cpp.o.d -o CMakeFiles/calculadora.dir/src/tree.cpp.o -c /home/edauandes/Desktop/tareas/tarea_3/src/tree.cpp
 
 CMakeFiles/calculadora.dir/src/tree.cpp.i: cmake_force
@@ -142,7 +114,7 @@ CMakeFiles/calculadora.dir/src/tree.cpp.s: cmake_force
 CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o: CMakeFiles/calculadora.dir/flags.make
 CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o: ../src/infixToPostfix.cpp
 CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o: CMakeFiles/calculadora.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o -MF CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o.d -o CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o -c /home/edauandes/Desktop/tareas/tarea_3/src/infixToPostfix.cpp
 
 CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.i: cmake_force
@@ -157,8 +129,6 @@ CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.s: cmake_force
 calculadora_OBJECTS = \
 "CMakeFiles/calculadora.dir/tests/tarea_4.cpp.o" \
 "CMakeFiles/calculadora.dir/src/treeNode.cpp.o" \
-"CMakeFiles/calculadora.dir/src/treeListNode.cpp.o" \
-"CMakeFiles/calculadora.dir/src/treeList.cpp.o" \
 "CMakeFiles/calculadora.dir/src/tree.cpp.o" \
 "CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o"
 
@@ -167,13 +137,11 @@ calculadora_EXTERNAL_OBJECTS =
 
 calculadora: CMakeFiles/calculadora.dir/tests/tarea_4.cpp.o
 calculadora: CMakeFiles/calculadora.dir/src/treeNode.cpp.o
-calculadora: CMakeFiles/calculadora.dir/src/treeListNode.cpp.o
-calculadora: CMakeFiles/calculadora.dir/src/treeList.cpp.o
 calculadora: CMakeFiles/calculadora.dir/src/tree.cpp.o
 calculadora: CMakeFiles/calculadora.dir/src/infixToPostfix.cpp.o
 calculadora: CMakeFiles/calculadora.dir/build.make
 calculadora: CMakeFiles/calculadora.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable calculadora"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edauandes/Desktop/tareas/tarea_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable calculadora"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/calculadora.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
